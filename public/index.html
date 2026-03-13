@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body { margin: 20px; }
+        #taskStats { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">To-Do List Application</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Add a new task">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="addTaskBtn"><i class="fas fa-plus"></i> Add Task</button>
+            </div>
+        </div>
+        <div class="btn-group mb-3" role="group" aria-label="Filter tasks">
+            <button type="button" class="btn btn-secondary" id="allTasksBtn">All</button>
+            <button type="button" class="btn btn-success" id="completedTasksBtn">Completed</button>
+            <button type="button" class="btn btn-danger" id="pendingTasksBtn">Pending</button>
+        </div>
+        <ul class="list-group" id="taskList"></ul>
+        <div id="taskStats" class="text-center">
+            <h4>Statistics</h4>
+            <p>Total Tasks: <span id="totalTasks">0</span></p>
+            <p>Completed Tasks: <span id="completedTasks">0</span></p>
+        </div>
+    </div>
+    <script>
+        // JavaScript functionality for the to-do list application will go here.
+    </script>
+</body>
+</html>
